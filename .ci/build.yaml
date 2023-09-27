@@ -1,5 +1,6 @@
 build:
   stage: build
+  image: docker/compose
   tags:
     - landing
   artifacts:

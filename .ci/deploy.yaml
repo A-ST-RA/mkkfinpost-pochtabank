@@ -1,5 +1,6 @@
 deploy:
   stage: deploy
+  image: docker/compose
   when: manual
   tags:
     - landing
