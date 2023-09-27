@@ -1,4 +1,5 @@
 deploy:
+  stage: deploy
   when: manual
   tags:
     - landing
