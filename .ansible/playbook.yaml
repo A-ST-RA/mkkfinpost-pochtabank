@@ -1,0 +1,10 @@
+- name: Landing delivery
+  hosts: landing
+  become: yes
+
+  tasks:
+    - name: Copy dist
+      ansible.builtin.copy:
+        src: ../dist/
+        dest: /srv/mkkfinpost.ru/
+        mode: '0644'

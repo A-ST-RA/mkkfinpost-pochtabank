@@ -1,0 +1,15 @@
+build:
+  tags:
+    - landing
+  artifacts:
+    paths:
+      - dist
+  before_script:
+    - docker login -u oauth --password $TOKEN_REGISTRY_YANDEX cr.yandex
+  script:
+    - docker run \
+             --rm \
+             -v $(pwd):/app \
+             --workdir=/app \
+             cr.yandex/crpf6o8u75ksatd6vo16/node:18 \
+             cd /app && npm install && npm run build

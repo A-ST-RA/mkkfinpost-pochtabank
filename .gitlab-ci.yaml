@@ -1,0 +1,7 @@
+stages:
+  - build
+  - deploy
+
+include:
+  - local: .ci/build.yaml
+  - local: .ci/deploy.yaml

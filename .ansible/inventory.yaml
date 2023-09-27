@@ -1,0 +1,4 @@
+landing:
+  hosts:
+    158.160.121.200:
+      ansible_user: admin
