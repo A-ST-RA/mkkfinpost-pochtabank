@@ -11,10 +11,4 @@ deploy:
     - docker login -u oauth --password $TOKEN_REGISTRY_YANDEX cr.yandex
   script:
     - ls -la
-    - docker run \
-      -v $(pwd):/app \
-      --workdir=/app \
-      --rm \
-      -e ANSIBLE_HOST_KEY_CHECKING=False \
-      cr.yandex/crpf6o8u75ksatd6vo16/ansible:01 \
-      ansible-playbook --private-key=id_rsa -i .ansible/inventory.yaml .ansible/playbook.yaml
+    - docker run -v $(pwd):/app --workdir=/app --rm -e ANSIBLE_HOST_KEY_CHECKING=False cr.yandex/crpf6o8u75ksatd6vo16/ansible:01 ansible-playbook --private-key=id_rsa -i .ansible/inventory.yaml .ansible/playbook.yaml
