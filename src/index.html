@@ -4,8 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Финпост</title>
 </head>
-<body>
+<body class="body">
+    <header class="header">
+        <a href="#">
+            <img class="header__logo" src="./public/images/svg/logo.svg" alt="Финпост Лого">
+        </a>
+        <nav class="header__navigation header__navigation-desktop">
+            <ul class="header__link-list">
+                <li><a href="#about" class="header__link">О компании</a></li>
+                <li><a href="#docs" class="header__link">Документы</a></li>
+                <li><a href="#contacts" class="header__link">Контакты</a></li>
+            </ul>
+        </nav>
+        <button class="header__burger">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+        </button>
+        <div class="header__popup header__popup-hidden popup wrapper">
+            <nav class="header__navigation">
+                <ul class="header__link-list header__link-list-mobile">
+                    <li><a href="#about" class="header__link">О компании</a></li>
+                    <li><a href="#docs" class="header__link">Документы</a></li>
+                    <li><a href="#contacts" class="header__link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section wrapper wrapper-no-pading">
+            <div class="hero">
+                <h1 class="hero__title title title-1">
+                    Простое и быстрое<br> 
+                    <span class="title__thin">оформление займов</span><br>
+                    в МКК ФинПост
+                </h1>
+            </div>
+        </section>
+        <section class="about section wrapper">
+            <h2 id="about" class="title section__title title-2">О компании</h2>
+            <div class="columns">
+                <div class="columns__half">
+                    <p class="description">
+                        Общество с ограниченной ответственностью Микрокредитная компания «ФинПост»
+                        (ООО МКК «ФинПост») зарегистрировано в реестре МФО ЦБ РФ за номером 23 030
+                        009957 от 19.05.2023 года. ИНН 9718221355, ОГРН 1237700199703. Юридический адрес:
+                        107061, вн.тер.г. муниципальный округ Преображенское, пл. Преображенская, д. 8,
+                        помещ. 38. Электронная почта: xxx@xxx.ru<br>
+                        <br>
+                        ООО МКК "ФинПост" является членом Саморегулируемой организации Союз
+                        микрофинансовых организаций «Микрофинансирование и Развитие» (СРО «МиР»),
+                        дата вступления: 20.07.2023, адрес: 107078, г. Москва, Орликов переулок, д. 5, стр. 1,
+                        этаж 2,пом. 11, тел. 8(495) 258-87-05
+                    </p>
+                    <ul class="links">
+                        <li><a href="https://npmir.ru/" class="links__item">Официальный сайт СРО МиР</a></li>
+                        <li><a href="https://www.cbr.ru/" class="links__item">Официальный сайт Банка России</a></li>
+                        <li><a href="https://www.cbr.ru/reception/" class="links__item">Интернет-приемная Банка России</a></li>
+                        <li><a href="https://cbr.ru/microfinance/registry/" class="links__item">Государственный реестр микрофинансовых организаций</a></li>
+                    </ul>
+                </div>
+                <div class="about__image-column columns__half">
+                    <img class="about__image" src="./public/images/png/office.png" alt="офис">
+                </div>
+            </div>
+            <p class="about__customer-desc description">
+                Потребитель финансовых услуг вправе направить обращение Финансовому уполномоченному Российской Федерации:
+                <ul class="description__bullets">
+                    <li class="description__bullet">Юридический и почтовый адрес: 119017, г. Москва, Старомонетный пер., дом 3, получатель АНО «СОДФУ»</li>
+                    <li class="description__bullet">Официальный сайт финансового уполномоченного</li>
+                    <li class="description__bullet">Номера телефонов службы обеспечения деятельности финансового уполномоченного: 8 (800) 200-00-10, 8 (495) 129-08-19</li>
+                </ul>
+            </p>
+        </section>
+        <section class="docs section wrapper">
+            <h2 id="docs" class="title section__title title-2">Документы и юридическая информация</h2>
+            <div class="docs__category">
+                <h3 class="docs__title section__title title title-3">Базовые стандарты</h3>
+                <ul class="docs__links links">
+                    <li class="docs__link"><a download href="./public/сайт/Базовые стандарты/Базовый стандарт защиты прав и интересов ФЛ и ЮЛ.pdf" class="links__item">Базовый стандарт защиты прав и интересов ФЛ и ЮЛ</a></li>
+                    <li class="docs__link"><a download href="./public/сайт/Базовые стандарты/Базовый стандарт по управлению рисками МФО.pdf" class="links__item">Базовый стандарт по управлению рисками МФО</a></li>
+                    <li class="docs__link"><a download href="./public/сайт/Базовые стандарты/Базовый стандарт совершения МФО операций на финансовом рынке.pdf" class="links__item">Базовый стандарт совершения МФО операций на финансовом рынке</a></li>
+                </ul>
+            </div>
+            <div class="docs__category">
+                <h3 class="docs__title section__title title title-3">Для клиентов</h3>
+                <ul class="docs__links links">
+                    <li class="docs__link"><a download
+                            href="./public/сайт/Для клиентов/Общие условия МКК.pdf"
+                            class="links__item">Общие условия МКК</a></li>
+                    <li class="docs__link"><a download
+                            href="./public/сайт/Для клиентов/Политика обработки персональных данных МКК Финпост.pdf"
+                            class="links__item">Политика обработки персональных данных МКК Финпост</a></li>
+                    <li class="docs__link"><a download
+                            href="./public/сайт/Для клиентов/РЕКОМЕНДАЦИИ ПО ЗАЩИТЕ ИНФОРМАЦИИ ОТ ВОЗДЕЙСТВИЯ ПРОГРАММНЫХ КОДОВ.pdf"
+                            class="links__item">РЕКОМЕНДАЦИИ ПО ЗАЩИТЕ ИНФОРМАЦИИ ОТ ВОЗДЕЙСТВИЯ ПРОГРАММНЫХ КОДОВ</a></li>
+                </ul>
+            </div>
+            <div class="docs__category">
+                <h3 class="docs__title section__title title title-3">Общие документы</h3>
+                <ul class="docs__links links">
+                    <li class="docs__link"><a download href="./public/сайт/Общие документы/Выписка из государственного реестра МФО.pdf"
+                            class="links__item">Выписка из государственного реестра МФО</a></li>
+                    <li class="docs__link"><a download
+                            href="./public/сайт/Общие документы/Выписка СРО МиР.pdf"
+                            class="links__item">Выписка СРО МиР</a></li>
+                    <li class="docs__link"><a download
+                            href="./public/сайт/Общие документы/ОГРН ФинПост.pdf"
+                            class="links__item">ОГРН ФинПост</a></li>
+                    <li class="docs__link">
+                        <a download href="./public/сайт/Общие документы/Персональный состав органов управления.pdf" class="links__item">
+                            Персональный состав органов управления
+                        </a>
+                    </li>
+                    <li class="docs__link">
+                        <a download href="./public/сайт/Общие документы/Свидетельство ИНН_МКК ФинПост.pdf" class="links__item">
+                            Свидетельство ИНН_МКК ФинПост
+                        </a>
+                    </li>
+                    <li class="docs__link">
+                        <a download href="./public/сайт/Общие документы/Устав_ООО_МКК_ФинПост.pdf" class="links__item">
+                            Устав ООО МКК ФинПост
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="contacts section wrapper">
+            <h2 id="contacts" class="title section__title title-2">Контакты</h2>
+            <div class="contacts__columns columns">
+                <div class="columns__half">
+                    ООО МКК «ФинПост»<br>
+                    <br>
+                    Юридический адрес: 107061, вн.тер.г. муниципальный округ
+                    Преображенское,пл. Преображенская, д. 8, помещ. 38                
+                </div>
+                <!-- <div class="columns__half">
+                    Электронная почта: <a class="contacts__link" href="email:xxx@xxx.ru">xxx@xxx.ru</a><br>
+                    Телефон: <a class="contacts__link" href="tel:89999999999">хххххххх (телефон Почта Банка для клиентов)</ac>
+                </div> -->
+            </div>
+        </section>
+        <!-- <section class="map section wrapper">
+            <h2 class="title section__title title-2">Адреса</h2>
+        </section> -->
+    </main>
+    <footer class="footer">
+        &copy; «ФинПост», 2023
+    </footer>
 </body>
 </html>

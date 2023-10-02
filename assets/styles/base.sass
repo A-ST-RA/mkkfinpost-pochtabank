@@ -1,6 +1,10 @@
-@import '~/assets/styles/index.sass'
-
 $min-width: 280px
 $max-width: 2000px
+
+$desktop: 1024px
     
-@mixin full-wrapper()
+@mixin tablet-mobile()
+    @media screen and (width < $desktop)
+        @content
+
+    
